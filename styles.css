@@ -47,3 +47,80 @@
 .collection-photo.bedding{background-position:center center}
 .feature-photo{background-position:center center}
 .insp-a,.insp-b,.insp-c{background-position:center center}
+
+
+/* V7 — campaign section */
+.campaign{
+  background:#fff;
+}
+.campaign-grid{
+  display:grid;
+  grid-template-columns:.88fr 1.12fr;
+  gap:58px;
+  align-items:center;
+}
+.campaign-poster-wrap{
+  display:flex;
+  justify-content:center;
+}
+.campaign-poster{
+  display:block;
+  width:min(100%,520px);
+  height:auto;
+  border-radius:26px;
+  box-shadow:var(--shadow);
+}
+.campaign-copy{
+  max-width:640px;
+}
+.campaign-lead{
+  font-size:20px;
+  color:#4f4942;
+  margin:20px 0 26px;
+}
+.campaign-facts{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+  margin:28px 0;
+}
+.campaign-facts div{
+  padding:18px;
+  border:1px solid var(--line);
+  border-radius:18px;
+  background:var(--paper);
+}
+.campaign-facts span{
+  display:block;
+  color:var(--muted);
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:.12em;
+  margin-bottom:7px;
+}
+.campaign-facts strong{
+  display:block;
+  font-size:14px;
+  line-height:1.35;
+}
+.campaign-actions{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:26px;
+}
+.campaign-note{
+  font-size:12px;
+  color:var(--muted);
+  margin-top:14px;
+}
+
+@media(max-width:960px){
+  .campaign-grid{grid-template-columns:1fr}
+  .campaign-copy{max-width:none}
+}
+@media(max-width:640px){
+  .campaign-facts{grid-template-columns:1fr}
+  .campaign-actions{display:grid;grid-template-columns:1fr}
+  .campaign-actions .btn{width:100%}
+}
